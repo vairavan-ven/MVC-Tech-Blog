@@ -1,0 +1,15 @@
+<section class="container mt-4">
+    <h2>Latest Blog Posts</h2>
+    {{#if posts.length}}
+        {{#each posts}}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">{{title}}</h3>
+                    <p class="card-text">{{content}}</p>
+                </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <p>No blog posts available.</p>
+    {{/if}}
+</section>

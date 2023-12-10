@@ -1,0 +1,16 @@
+<section class="container mt-4">
+    <h2>Your Dashboard</h2>
+    <h3>Existing Blog Posts</h3>
+    {{#if userPosts.length}}
+        {{#each userPosts}}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">{{content}}</p>
+                </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <p>No blog posts available.</p>
+    {{/if}}
+</section>
